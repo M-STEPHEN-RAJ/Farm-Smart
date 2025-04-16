@@ -52,7 +52,7 @@ const UploadImage = ({ onResult }) => {
     formData.append("file", imageFile);
 
     try {
-      const response = await axios.post("https://plantdiseasedetection-p3cg.onrender.com", formData, {
+      const response = await axios.post("https://plantdiseasedetection-p3cg.onrender.com/predict", formData, {
         headers: { "Content-Type": "multipart/form-data" }
       });     
 
