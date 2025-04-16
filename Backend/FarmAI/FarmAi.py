@@ -8,7 +8,7 @@ import requests
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app)  # ✅ Enable CORS for all routes
+CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}}) # ✅ Enable CORS for all routes
 
 # Get API Key from environment variable
 API_KEY = os.getenv("HUGGINGFACE_API_KEY")

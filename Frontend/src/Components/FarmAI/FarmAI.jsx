@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import axios from "axios"; // ✅ Import axios
 import "./FarmAI.css";
 
-const API_URL = "http://127.0.0.1:5000/chat"; // Ensure this is correct
+const API_URL = "https://farmsmart-ai.onrender.com/chat"; // Ensure this is correct
 
 function App() {
   const [messages, setMessages] = useState([{ sender: "AI", text: "Hi! I am FarmSmart AI. What can I help with?" }]);
