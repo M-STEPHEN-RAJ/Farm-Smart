@@ -1,1 +1,1 @@
-web: python DiseaseDetection.py
+web: gunicorn Backend.PlantDiseaseDetection.DiseaseDetection:app

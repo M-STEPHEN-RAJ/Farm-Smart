@@ -1,0 +1,22 @@
+# Ignore .env file
+.env
+
+# Python bytecode files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Dependency directories
+node_modules/
+
+# IDE files (if using editors like VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+
+# Render build directories (if using Render-specific build paths)
+render.yaml

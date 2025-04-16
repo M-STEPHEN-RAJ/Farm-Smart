@@ -5,7 +5,7 @@ from PIL import Image
 import io
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
 # Load the Hugging Face model
 try:
@@ -45,4 +45,6 @@ def classify_plant_disease():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    port = int(os.environ.get("PORT", 5001))  # Use the port from Render
+    app.run(debug=True, host="0.0.0.0", port=port)
+
