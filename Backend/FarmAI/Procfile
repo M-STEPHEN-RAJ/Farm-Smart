@@ -1,2 +1,1 @@
-web: gunicorn FarmAI.FarmAi:app
-
+web: gunicorn Backend.FarmAI.FarmAi:app
