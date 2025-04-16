@@ -1,0 +1,31 @@
+.weather-container {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+}
+
+.weather-left,
+.weather-right {
+    display: flex;
+}
+
+.weather-icon {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 18px;
+}
+
+.weather-icon img {
+    width: 26px;
+}
+
+.condition,
+.location {
+    gap: 8px;
+}

@@ -1,0 +1,81 @@
+.crop-container {
+    position: relative;
+    top: 50px;
+    left: 19%;
+    width: 80%;
+    height: 550px;
+    font-family: 'roboto', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.crop-recommended-info {
+    display: flex;
+    gap: 80px;
+}
+
+.crop-recommended-details h2 {
+    translate: 8px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.crop-recommended-details tr p{
+    margin-bottom: 14px;
+    font-size: 18px;
+}
+
+.crop-recommended-details tr .data {
+    margin-left: 15px;
+}
+
+.crop-recommended-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.crop-recommended-info .crop-result-img {
+    border-radius: 15px;
+    border: 5px solid rgb(25, 156, 25);
+}
+
+.go-to-seed button {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transform: translate(0, 15px);
+    background-color: green;
+    color: white;
+}
+
+.go-to-seed button:hover {
+    background-color: rgb(25, 156, 25);
+}
+
+.crop-result {
+    font-size: 36px;
+}
+
+.tick {
+    border: none;
+}
+
+.crop-result-back {
+    position: absolute;
+    translate: -400px -192px;
+    cursor: pointer; 
+    padding: 5px;   
+}
+
+.crop-result-back:hover {
+    background: #e2e1e1;
+    border-radius: 50%;
+}

@@ -1,0 +1,56 @@
+.crop-container {
+    position: relative;
+    top: 50px;
+    left: 19%;
+    width: 80%;
+    height: 550px;
+    font-family: 'roboto', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.crop-container h2 {
+    color: #666;
+}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+  }
+  
+  input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .crop-submit {
+    align-self: center;
+    font-size: 15px;
+    background: #28a745;
+    width: 30%;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 40px;
+  }
+  
+  .crop-submit:hover {
+    background: #218838;
+  }
+  
+  .result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-radius: 5px;
+  }
+  

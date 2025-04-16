@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.landing-page {
+    position: relative;
+    top: 74px;
+    left: 19%;
+    width: 80%;
+    height: 430px;
+    font-family: 'roboto', sans-serif;
+}
+
+.landing-container {
+    height: 100%;        
+    width: 100%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.farmSmart-logo {
+    display: flex;
+    align-items: center;
+}
+
+.farmSmart-logo img {
+    width: 60px;    
+}
+
+.landing-desc {
+    margin-left: 10px;
+    margin-top: 60px;
+}
+
+.landing-desc p {
+    font-weight: 500;
+    font-size: 36px;
+    background: linear-gradient(90deg, rgb(51, 50, 50), rgb(13, 172, 13));
+    background-clip: text;
+    color: transparent;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.landing-desc button {
+    padding: 15px 30px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #098f31, #51c247);
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.landing-desc button:hover {
+    background: linear-gradient(90deg, #087e2b, #46a73d);
+    transform: scale(1);
+    transition: 1s linear fade;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.farmSmart-logo p {
+    font-size: 26px;
+    color: #666;
+}
+
+.landing-left {
+    transform: translate(80px, 80px);
+    width: 60%;
+}
+
+.landing-right {
+    position: relative;
+}
+
+.landing-right img {
+    position: absolute;  
+    transform: translate(-490px, 110px); 
+    z-index: 2;  
+    width: 500px;
+}
+
+.landing-right .farmer-bg {
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #087e2b, #50be46);
+    transform: translate(-335px, 80px);
+}
+

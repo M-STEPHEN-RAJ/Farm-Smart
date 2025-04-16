@@ -1,0 +1,10 @@
+.navbar {
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.hero-section {
+    display: flex;
+}
+

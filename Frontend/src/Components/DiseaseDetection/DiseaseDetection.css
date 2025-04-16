@@ -1,0 +1,12 @@
+.disease-container {
+    position: relative;
+    top: 60px;
+    left: 19%;
+    width: 80%;
+    height: 550px;
+    background: #fff;
+    margin: 5px -5px;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}

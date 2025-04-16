@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    scrollbar-width: none;
+}
+
+:root {
+    --card-bg-clr-- : #fff;
+    --seed-h3-clr-- : #666;
+    --btn-hvr-clr-- : #49af2f;
+}
+
+.buyseeds {
+    position: relative;
+    left: 17%;
+    top: 60px;
+    width: 80%;
+    margin: 10px 20px;
+    font-family: 'roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px 20px;
+    padding: 10px 0;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    background-color: var(--card-bg-clr--);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: default;   
+}
+
+.card img {
+    width: 100%;
+    height: 57%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.seed-desc {
+    padding: 3px 10px;
+}
+
+.seed-desc h3 {
+    color: var(--seed-h3-clr--);
+}
+
+.seed-desc p {
+    font-size: 14px;
+    margin: 3px 0px 13px 0;
+}
+
+.seed-desc button {
+    background-color: #289c28;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    width: 90px;
+    height: 28px;
+}
+
+.seed-desc button:hover {
+    background-color: var(--btn-hvr-clr--);
+}
+
+.remove-btn {
+    background-color: #e3344d !important; /* Red */
+    border: none;
+}
+
+.remove-btn:hover {
+    background-color: #c9302c !important; /* Darker red */
+}

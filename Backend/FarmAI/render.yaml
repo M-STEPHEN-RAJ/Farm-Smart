@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: FarmSmartAI
+    env: python
+    buildCommand: "pip install -r Backend/FarmAI/requirements.txt"
+    startCommand: "gunicorn FarmAI.FarmAi:app"
+    pythonVersion: "3.10"
+    envVars:
+      - key: HUGGINGFACE_API_KEY
+        sync: false

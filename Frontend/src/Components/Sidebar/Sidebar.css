@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Bg-hover-clr-- : rgb(222, 223, 224); 
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    margin-top: 5px;
+    width: 17%;
+    font-family: 'roboto', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.side-active {
+    background-color: var(--Bg-hover-clr--);
+}
+
+.link {
+    text-decoration: none;
+    color: #666;
+}
+
+.sidebar-hr-1 {
+    width: 85%;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    gap: 8.25px; 
+    margin-bottom: 17px;  
+}
+
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8.25px; 
+    margin-bottom: 17px;  
+}
+
+.sidebar-hr-2 {
+    width: 85%;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 17px;
+    margin-bottom: 8px;
+}
+
+.side-background {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px 0px;
+    cursor: pointer;
+}
+
+.side-background img {
+    padding-left: 20px;
+}
+
+.side-background h3 {
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.side-background:hover {
+    background-color: var(--Bg-hover-clr--);
+}
+
+.side-active:hover {
+    background-color: rgb(203, 204, 204);
+}
