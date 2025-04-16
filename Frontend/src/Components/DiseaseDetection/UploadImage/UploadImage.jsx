@@ -52,9 +52,9 @@ const UploadImage = ({ onResult }) => {
     formData.append("file", imageFile);
 
     try {
-      const response = await axios.post("http://127.0.0.1:5001/predict", formData, {
+      const response = await axios.post("https://plantdiseasedetection-p3cg.onrender.com/predict", formData, {
         headers: { "Content-Type": "multipart/form-data" }
-      });
+      });     
 
       // Pass the result to parent component (DiseaseDetection.jsx)
       onResult({
