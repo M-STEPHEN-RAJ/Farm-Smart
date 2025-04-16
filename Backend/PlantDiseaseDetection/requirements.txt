@@ -5,3 +5,5 @@ requests
 transformers
 Pillow
 gunicorn
+torch
+tensorflow
