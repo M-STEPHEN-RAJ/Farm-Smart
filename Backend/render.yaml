@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: FarmSmartAI
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn FarmAi:app"
+    pythonVersion: "3.10"
+    envVars:
+      - key: FARMAI_API_KEY
+        sync: false
+    rootDir: Backend/FarmAI  # <-- this points to the FarmAI folder
+
+  - type: web
+    name: DiseaseDetection
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn FarmAi:app"
+    pythonVersion: "3.10"
+    envVars:
+      - key: HUGGINGFACE_API_KEY
+        sync: false
+    rootDir: Backend/PlantDiseaseDetection  # <-- this points to the PlantDiseaseDetection folder
