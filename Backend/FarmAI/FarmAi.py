@@ -15,7 +15,7 @@ CORS(app, supports_credentials=True, resources={r"/*": {
 }})
 
 # HuggingFace setup...
-API_KEY = os.getenv("HUGGINGFACE_API_KEY")
+API_KEY = os.getenv("FARMAI_API_KEY")
 API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3"
 HEADERS = {"Authorization": f"Bearer {API_KEY}"}
 

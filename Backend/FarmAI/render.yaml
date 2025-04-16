@@ -6,5 +6,5 @@ services:
     startCommand: "web: gunicorn FarmAi:app"
     pythonVersion: "3.10"
     envVars:
-      - key: HUGGINGFACE_API_KEY
+      - key: FARMAI_API_KEY
         sync: false
