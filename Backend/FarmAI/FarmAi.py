@@ -8,7 +8,7 @@ import requests
 load_dotenv()
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "http://localhost:5173", "methods": ["GET", "POST"], "allow_headers": ["Content-Type"]}})
+CORS(app, resources={r"/*": {"origins": "*", "methods": ["GET", "POST"], "allow_headers": ["Content-Type"]}})
 
 # Get API Key from environment variable
 API_KEY = os.getenv("HUGGINGFACE_API_KEY")
