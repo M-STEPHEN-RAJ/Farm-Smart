@@ -3,15 +3,12 @@ from flask_cors import CORS
 from transformers import pipeline
 from PIL import Image
 import io
+import os
 
 app = Flask(__name__)
 
-# 🔥 FIX: Allow specific origin with credentials and all methods
-CORS(app, supports_credentials=True, resources={r"/*": {
-    "origins": "http://localhost:5173",
-    "methods": ["GET", "POST", "OPTIONS"],
-    "allow_headers": ["Content-Type", "Authorization"]
-}})
+# 🔥 Allow all origins, all methods, all headers
+CORS(app, supports_credentials=True)
 
 # Load the Hugging Face model
 try:
@@ -51,6 +48,5 @@ def classify_plant_disease():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5001))  # Use the port from Render
+    port = int(os.environ.get("PORT", 5001))
     app.run(debug=True, host="0.0.0.0", port=port)
-
